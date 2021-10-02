@@ -27,6 +27,6 @@
       <%= link_to "フォローする", user_relationships_path(user.id), method: :post, class: "btn btn-success" %>
     <% end %>
   <% else %>
-    <%= link_to '', edit_user_path(user), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench edit_user_#{user.id}" %>
+    <%= link_to '', edit_user_path(user), class: "col-xs-12 btn btn-outline-secondary btn-block fas fa-user-cog edit_user_#{user.id}" %>
   <% end %>
 </div>
